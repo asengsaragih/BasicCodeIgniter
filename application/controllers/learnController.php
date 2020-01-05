@@ -18,5 +18,22 @@
         public function name() {
             echo "Nama saya aldi wahyu saragih";
         }
+
+        public function learnView() {
+            //bisa buat kosongan juga
+            //$this->load->view('learnView');
+            //--------------------------------
+
+            // bisa juga kaya yang di bawah
+            // $data['learnCodeigniter'] = "Learning CodeIgniter";
+            // $this->load->view('learnView', $data);
+            // ---------------------------------------------------
+
+            $data = array(
+                'judul' => "cara membuat view pada codeigniter",
+                'tutorial' => "CodeIgniter"
+            );
+            $this->load->view('learnView', $data);
+        }
     }
 ?>
